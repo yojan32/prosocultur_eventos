@@ -1,8 +1,46 @@
 .titulo {
 	font-weight: 900;
 	font-size: 4rem;
+	margin: 0;
+}
+@media (min-width: 768px) {
+	.historia {
+		display: flex;
+	}
+
+	.cardHistoria{
+		font-size: 16px;
+		width: 50%;
+	}
+
+	.textHistoria::-webkit-scrollbar {
+		-webkit-appearance: none;
+	}
+	
+	.textHistoria::-webkit-scrollbar:vertical {
+		width:10px;
+	}
+
+	.textHistoria::-webkit-scrollbar-button:increment,.textHistoria::-webkit-scrollbar-button {
+		display: none;
+	}
+
+	.textHistoria::-webkit-scrollbar-thumb {
+		background-color: #797979;
+		border-radius: 20px;
+		border: 2px solid #f1f2f3;
+	}
+}
+.cardHistoriaSub{
+	border-radius: 2rem;
+	margin: 2rem;
+	padding: 1rem 3rem;
+	background-color: #fff;
+	height: 35rem;
+	box-shadow: 0 0 20px -16px;
 }
 
-.historia p {
-	font-size: 14px;
+.textHistoria{
+	overflow: overlay;
+	height: 25rem;
 }
