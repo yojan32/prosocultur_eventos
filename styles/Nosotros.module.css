@@ -3,16 +3,97 @@
 	font-size: 4rem;
 	margin: 0;
 }
+
+.textHistoria{
+	overflow: overlay;
+	height: 25rem;
+	margin-bottom: inherit;
+}
+
+.equipo .titulo{
+	text-align: center;
+}
+
+.cardImg  img{
+	object-fit: cover;
+}
+
+.staff{
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.staffJob{
+	font-size: 18px;
+	font-weight: 600;
+	color: #2d3748b8;
+}
+
+.equipo .cardNosotrosSub, .equipo .cardNosotrosSub p{
+	position: relative;
+}
+
+.equipo .cardNosotrosSub::before{
+	content: "";
+	background-image: url("../public/img/patternBackground.png");
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.1;
+}
+
+.cardImg img{
+	border-radius: 10rem;
+}
+
+/*Desktoop*/
 @media (min-width: 768px) {
-	.historia {
-		display: flex;
+	.nosotros {
+		margin-top: 8rem;
+		display: grid;
+		grid-template-columns: repeat(2, auto);
 	}
 
-	.cardHistoria{
+	.nosotros:nth-child(3) {
+		margin-top: 0;
+	}
+
+	.cardNosotros{
 		font-size: 16px;
-		width: 50%;
 	}
 
+	.cardNosotrosSub{
+		border-radius: 2rem;
+		margin: 2rem;
+		padding: 1rem 3rem;
+		background-color: rgba(255, 255, 255, 0);
+		box-shadow: 0 0 20px -16px;
+	}
+
+	.cardNosotrosSub:nth-child(1){
+		background-color: #fff;
+		height: 35rem;
+	}
+	
+	.cardNosotrosSub h4{
+		text-align: center;
+	}
+
+	.equipo .cardNosotrosSub{
+		display: flex;
+		gap: 1rem;
+		padding: 5rem;
+	}
+
+	.cardImg{
+		text-align: center;
+		width: 25rem;
+	}
+
+	/*scroll bar*/
 	.textHistoria::-webkit-scrollbar {
 		-webkit-appearance: none;
 	}
@@ -31,16 +112,22 @@
 		border: 2px solid #f1f2f3;
 	}
 }
-.cardHistoriaSub{
-	border-radius: 2rem;
-	margin: 2rem;
-	padding: 1rem 3rem;
-	background-color: #fff;
-	height: 35rem;
-	box-shadow: 0 0 20px -16px;
-}
 
-.textHistoria{
-	overflow: overlay;
-	height: 25rem;
+/*Mobil*/
+@media (max-width: 768px) {
+	.cardNosotrosSub{
+		border-radius: 2rem;
+		margin: 2rem 0;
+		padding: 1rem 2rem;
+		background-color: rgba(255, 255, 255, 0);
+		box-shadow: 0 0 20px -16px;
+	}
+
+	.cardNosotrosSub:nth-child(1){
+		background-color: #fff;
+	}
+
+	.cardImg{
+		text-align: center;
+	}
 }

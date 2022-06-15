@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap');
 :root {
-	--fuente-principal: "Inter", sans-serif;
+	--fuente-principal: 'Inter', sans-serif;
     --font-color-primary: #2D3748;
 }
 

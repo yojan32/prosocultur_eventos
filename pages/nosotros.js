@@ -1,13 +1,14 @@
+import Image from 'next/image'
 import Layaout from "../components/Layaout"
 import styles from '../styles/Nosotros.module.css'
 
 function Nosotros() {
 	return (
 		<Layaout pagina='Nosotros'>
-			<div className={styles.historia}>
-				<div className={styles.cardHistoria}>
-					<div className={styles.cardHistoriaSub}>
-						<h1 className={styles.titulo}>Nuestra Historia</h1>
+			<div className={styles.nosotros}>
+				<div className={styles.cardNosotros}>
+					<div className={styles.cardNosotrosSub}>
+						<h2 className={styles.titulo}>Nuestra Historia</h2>
 						<div className={styles.textHistoria}>
 							<p>Nuestra empresa es familiar, creada hace ya 36 años y 33 en el mercado.</p>
 
@@ -52,13 +53,45 @@ function Nosotros() {
 						</div>
 					</div>
 				</div>
-				<div className={styles.cardHistoria}>
-					<div className={styles.cardHistoriaSub}>
-						<h1 className={styles.titulo}>Nuestra Misión</h1>
+				<div className={styles.cardNosotros}>
+					<div className={styles.cardNosotrosSub}>
+						<h2 className={styles.titulo}>Nuestra Misión</h2>
 						<p>
 							Posicionarnos como una de las más prestigiosas agencias de viajes a nivel nacional, ofreciendo la mejor calidad de servicio, hacia nuestro público objetivo Colegios y Empresas,
 							y así caracterizarnos por ser una organización comprometida con la calidad y compromiso de nuestros servicios ofrecidos.
 						</p>
+					</div>
+				</div>
+			</div>
+			<div className={styles.cardNosotrosSub}>
+				<h4>"Pasión, Amor y Entrega por el servicio que préstamos, brindando siempre lo mejor de nosotros"</h4>
+			</div>
+			<div className={styles.equipo}>
+				<h2 className={styles.titulo}>Nuestro Equipo</h2>
+				<div className={styles.cardNosotrosSub}>
+					<div className={styles.cardImg}>
+						<Image src="/img/Luz-Foto-1.webp" alt="Logo Prosocultur" width={180} height={180} />
+					</div>
+					<div>
+						<p className={styles.staff}>Luz Mery Buitrago Suárez</p>
+						<p className={styles.staffJob}>Fundadora & Ventas</p>
+					</div>
+				</div>
+				<div className={styles.cardNosotrosSub}>
+					<div className={styles.cardImg}>
+						<Image src="/img/Adriana-Foto-5.webp" alt="Logo Prosocultur" width={180} height={180} />
+					</div>
+					<div>
+						<p className={styles.staff}>Adriana Gómez Buitrago</p>
+						<p className={styles.staffJob}>Administrativa & Coordinadora de Eventos</p>
+					</div>
+				</div>
+				<div className={styles.cardNosotrosSub}>
+					<div className={styles.cardImg}>
+						<Image src="/img/EQUIPO-PROSO.webp" alt="Logo Prosocultur" width={180} height={180} />
+					</div>
+					<div>
+						<p className={styles.staff}>Logística & Apoyo</p>
 					</div>
 				</div>
 			</div>
