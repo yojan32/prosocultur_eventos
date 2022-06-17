@@ -4,6 +4,17 @@
 	margin: 0;
 }
 
+.cardNosotrosSub{
+	border-radius: 2rem;
+	margin: 2rem;
+	padding: 1rem 3rem;
+	background-color: rgba(255, 255, 255, 0);
+	box-shadow: 0 0 20px -16px;
+}
+.cardNosotrosSub h4{
+	text-align: center;
+}
+
 .textHistoria{
 	overflow: overlay;
 	height: 25rem;
@@ -49,11 +60,57 @@
 	border-radius: 10rem;
 }
 
-/*Desktoop*/
-@media (min-width: 768px) {
+/*Mobil*/
+@media only screen and (max-width: 767.98px) {
+	.cardNosotrosSub{
+		border-radius: 2rem;
+		margin: 2rem 0;
+		padding: 1rem 2rem;
+	}
+
+	.cardNosotrosSub:nth-child(1){
+		background-color: #fff;
+	}
+
+	.equipo .cardNosotrosSub{
+		text-align: center;
+	}
+
+	.cardImg{
+		text-align: center;
+	}
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px){
 	.nosotros {
-		margin-top: 8rem;
+		margin: 8rem 2rem 4rem 2rem;
 		display: grid;
+		row-gap: 2rem;
+	}
+
+	.cardNosotrosSub:nth-child(1){
+		margin: 0;
+		height: auto;
+	}
+
+	.equipo .cardNosotrosSub{
+		display: flex;
+		gap: 1rem;
+		padding: 5rem;
+	}
+
+	.equipo .cardNosotrosSub{
+		gap: 5rem;
+	}
+}
+
+/*Desktoop*/
+@media only screen and (min-width: 992px) {
+	.nosotros {
+		margin: 8rem 2rem 8rem 2rem;
+		display: grid;
+		gap: 2rem;
 		grid-template-columns: repeat(2, auto);
 	}
 
@@ -65,21 +122,9 @@
 		font-size: 16px;
 	}
 
-	.cardNosotrosSub{
-		border-radius: 2rem;
-		margin: 2rem;
-		padding: 1rem 3rem;
-		background-color: rgba(255, 255, 255, 0);
-		box-shadow: 0 0 20px -16px;
-	}
-
 	.cardNosotrosSub:nth-child(1){
 		background-color: #fff;
 		height: 35rem;
-	}
-	
-	.cardNosotrosSub h4{
-		text-align: center;
 	}
 
 	.equipo .cardNosotrosSub{
@@ -110,24 +155,5 @@
 		background-color: #797979;
 		border-radius: 20px;
 		border: 2px solid #f1f2f3;
-	}
-}
-
-/*Mobil*/
-@media (max-width: 768px) {
-	.cardNosotrosSub{
-		border-radius: 2rem;
-		margin: 2rem 0;
-		padding: 1rem 2rem;
-		background-color: rgba(255, 255, 255, 0);
-		box-shadow: 0 0 20px -16px;
-	}
-
-	.cardNosotrosSub:nth-child(1){
-		background-color: #fff;
-	}
-
-	.cardImg{
-		text-align: center;
 	}
 }

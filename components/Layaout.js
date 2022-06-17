@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from './Header'
+import Footer from './Footer'
 
 function Layaout({children, pagina}) {
 	return (
@@ -11,6 +12,7 @@ function Layaout({children, pagina}) {
 			</Head>
 			<Header />
             <div className="contenedor">{children}</div>
+            <Footer />
 		</>
 	)
 }

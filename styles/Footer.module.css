@@ -1,0 +1,52 @@
+.fooContenedor{
+	background-color: #393d44;
+	width: 100%;
+	display: grid;
+	color: #fff;
+	margin-top: 4rem;
+}
+
+.contenedor{
+	display: grid;
+	padding: 2rem 0;
+}
+
+.contenedor h5{
+	text-align: center;
+}
+
+.contactFoo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	font-size: 15px;
+}
+
+.contactFoo a{
+	font-size: 15px;
+    color: #5191fa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contactFoo div:nth-child(2){
+	display: flex;
+	gap: 2rem;
+    align-items: center;
+}
+
+/*Movil*/
+@media only screen and (max-width: 767.98px) {
+	.contactFoo{
+		display: grid;
+		gap: 0;
+		justify-content: normal;
+		text-align: center;
+		justify-items: center;
+	}
+
+	.contactFoo:nth-child(2){
+		margin-bottom: 2rem;
+	}
+}
