@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap');
+/* react-image-gallery */
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 :root {
 	--fuente-principal: 'Inter', sans-serif;
     --font-color-primary: #2D3748;
+    --slide-progress: 35%;
+	--slide-progress--transition: all 200ms cubic-bezier(0.82, 0.02, 0.39, 1.01);
 }
 
 html {

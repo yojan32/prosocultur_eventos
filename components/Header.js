@@ -32,7 +32,10 @@ function Header() {
 						<Link href="/" >
 							<a className={currentRoute === "/" ? styles.active : ""}>Inicio</a>
 						</Link>
-						<Link href="/nosotros">
+						<Link href="/empresas">
+							<a className={currentRoute === "/empresas" ? styles.active : ""}>Planes Empresas</a>
+						</Link>
+                        <Link href="/nosotros">
 							<a className={currentRoute === "/nosotros" ? styles.active : ""}>Nosotros</a>
 						</Link>
 					</nav>
